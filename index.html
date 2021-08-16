@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./fabric.min.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.6.5/fabric.min.js" defer></script>
+    <script src="./jquery-3.6.0.min.js" defer></script>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div id="demo-inf">
+    
+        <div id="demo-layout">
+            <input type="text" name="art" id="art" value="11111111"/>
+            <button id="demo-test" name="go" class="t-btn" >Подобрать шаблон</button>
+       </div>
+        
+        <div id="demo-result">
+            <!-- <div id="text">
+                <label for="text2">text1</label>
+                <textarea id="text2" resize='horizontal'></textarea>
+                <label for="text3">text2</label>
+                <textarea id="text3"></textarea>
+            </div> -->
+                <div id="template"></div>
+                <div id="photo-from-wb"></div>
+                <div id="error-msg" class="t-section__descr t-descr t-descr_xl t-margin_auto">Фото не найдено!<br>Впишите в поле реальный артикул</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+#rec342584010 {
+    display: none;
+
+}
+
+#demo-result {
+    display: none;
+    position: relative;
+    margin-top: 15px;
+    width: 450px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#demo-layout {
+    max-width: 755px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#desc {
+    margin: 15px 0;
+}
+
+#error-msg {
+    margin: 20px 0;
+    color: rgb(173, 21, 21);
+    text-align: center;
+}
+
+
+#photo-from-wb,
+#template {
+
+    position: relative;
+    background-size: cover !important;
+    width: 100%;
+    height: 600px;
+}
+
+#template {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
+
+#demo-test {
+    color: #ffffff;
+    background-color: #40a0ff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#art {
+    width: 175px;
+    height: 48px;
+    line-height: 50px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    border: 1px solid #40a0ff;
+    vertical-align: middle;
+    text-align: center;
+}
+
+:root{
+    --paddingTop: 100px;
+    --inputWidth: 20ch;
+}
+
+#text{
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    display: grid;
+    margin-right: .5rem;
+    z-index: 2;
+}
+#text label{
+    text-align: right;
+    opacity: 0.6;
+}
+#text textarea{
+    width: var(--inputWidth);
+    padding: 2px 1ch;
+    min-height: 2.5ch;
+}
+#text textarea:focus{
+    border: 2px dotted rgb(39, 197, 0);
+    outline: none;
+}
+.canvas-container{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.lower-canvas{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 840px){
+    #demo-result {
+        margin-top: var(--paddingTop);
+    }
+
+    #text{
+        position:absolute;
+        left: calc(50% - var(--inputWidth)/2);
+        top: calc(-1 * var(--paddingTop));
+        width: max-content;
+    }
+    #text label{
+        text-align: center;
+        opacity: 0.6;
+    }
+}
